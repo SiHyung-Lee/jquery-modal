@@ -1,0 +1,26 @@
+{
+  "name": "jquery-modal",
+  "version": "1.0.0",
+  "description": "A lightweight jQuery modal plugin",
+  "main": "jquery-modal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "modal",
+    "dialog",
+    "popup",
+    "plugin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "jquery": ">=3.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
