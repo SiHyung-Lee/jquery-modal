@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>jquery-modal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Modal Plugin</title>
     <link rel="stylesheet" href="jquery-modal.css"/>
 </head>
 <body>
 
+<!-- 모달 오버레이 -->
+<div class="modal-overlay" id="modalOverlay" aria-hidden="true"></div>
+
+<!-- 모달 컨테이너 -->
 <div class="modal-outer">
-    <div data-modal-target="modal1" class="modal">modal 1</div>
-    <div data-modal-target="modal2" class="modal">modal 2</div>
-    <div data-modal-target="modal3" class="modal">modal 3</div>
+    <div data-modal-target="modal1" class="modal" role="dialog" aria-labelledby="modal1-title" aria-modal="true">
+        <button class="modal-close" aria-label="모달 닫기">&times;</button>
+        <h2 id="modal1-title">모달 1</h2>
+        <p>이것은 첫 번째 모달입니다.</p>
+    </div>
+    <div data-modal-target="modal2" class="modal" role="dialog" aria-labelledby="modal2-title" aria-modal="true">
+        <button class="modal-close" aria-label="모달 닫기">&times;</button>
+        <h2 id="modal2-title">모달 2</h2>
+        <p>이것은 두 번째 모달입니다.</p>
+    </div>
+    <div data-modal-target="modal3" class="modal" role="dialog" aria-labelledby="modal3-title" aria-modal="true">
+        <button class="modal-close" aria-label="모달 닫기">&times;</button>
+        <h2 id="modal3-title">모달 3</h2>
+        <p>이것은 세 번째 모달입니다.</p>
+    </div>
 </div>
+
+<!-- 트리거 버튼 -->
 <div class="trigger-wrap">
-    <button data-modal-trigger="modal1" data-modal-width="300" data-modal-height="300">show modal 1</button>
-    <button data-modal-trigger="modal2" data-modal-width="500" data-modal-height="400">show modal 2</button>
-    <button data-modal-trigger="modal3">show modal 3</button>
+    <button class="modal-trigger" data-modal-trigger="modal1" data-modal-width="300" data-modal-height="300">모달 1 열기</button>
+    <button class="modal-trigger" data-modal-trigger="modal2" data-modal-width="500" data-modal-height="400">모달 2 열기</button>
+    <button class="modal-trigger" data-modal-trigger="modal3">모달 3 열기</button>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="jquery-modal.js"></script>
 </body>
 </html>
