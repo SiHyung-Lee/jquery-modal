@@ -2,6 +2,10 @@
 
 심플하고 접근성이 뛰어난 jQuery 모달 플러그인입니다. 오버레이, 애니메이션, 키보드 네비게이션을 지원합니다.
 
+## 🌐 라이브 데모
+
+**[https://jquery-modal.vercel.app/](https://jquery-modal.vercel.app/)**
+
 ## ✨ 주요 기능
 
 - 📦 **경량화**: 최소한의 코드로 구현
@@ -248,9 +252,10 @@ $('.my-button').modal({
 
 ```
 jquery-modal/
-├── jquery-modal.js      # JavaScript 플러그인
-├── jquery-modal.css     # 스타일시트
-├── jquery-modal.html    # 데모 페이지
+├── index.html          # 데모 페이지
+├── jquery-modal.js     # JavaScript 플러그인
+├── jquery-modal.css    # 스타일시트
+├── vercel.json         # Vercel 배포 설정
 └── README.md           # 문서
 ```
 
@@ -267,14 +272,25 @@ cd jquery-modal
 2. HTML 파일을 브라우저에서 열기
 ```bash
 # macOS
-open jquery-modal.html
+open index.html
 
 # Linux
-xdg-open jquery-modal.html
+xdg-open index.html
 
 # Windows
-start jquery-modal.html
+start index.html
 ```
+
+또는 라이브 서버 사용:
+```bash
+# Python 3
+python -m http.server 8000
+
+# Node.js (npx 사용)
+npx serve
+```
+
+그런 다음 브라우저에서 `http://localhost:8000` 접속
 
 ## 🐛 버그 리포트
 
